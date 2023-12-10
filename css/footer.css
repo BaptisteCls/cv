@@ -1,0 +1,39 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(0deg, black 0%, black 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+footer div{
+    min-width: 250px;
+    width: 33%;
+    max-height: 80px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+footer>div:nth-child(even){
+    border-right: solid 2px rgba(255, 255, 255, 0.379);
+    border-left: solid 2px rgba(255, 255, 255, 0.379);
+}
+
+footer button{
+    margin-top: 10px;
+    width: 100px;
+}
+
+footer div:last-child{
+    flex-direction: row;
+}
+
+footer i{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}

@@ -1,0 +1,95 @@
+#formationContain{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 3.5vh;
+    padding-bottom: 3.5vh;
+}
+
+.cards{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    gap: 10px;
+    width: calc(100%-20px);
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.02);
+    border: solid  1px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    height: 260px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 500ms;
+}
+
+.card:hover::before{
+    opacity: 1;
+}
+
+.card::before{
+    opacity: 0;
+    background: radial-gradient(
+        800px circle at 200px 175px,
+        #00b7ff15,
+        transparent 40%
+    );
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    transition: 500ms;
+    z-index: 2;
+}
+
+.card>p{
+    color: rgba(255, 255, 255, 0.7);
+    width: 92%;
+    text-align: justify;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.card>p:nth-child(2){
+    margin: 5px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.619);
+    text-align: center;
+    overflow: visible;
+}
+
+.card>p:nth-child(1){
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    overflow: visible;
+}
+
+
+#formCards>div:hover{
+    height: 380px;
+    width: 380px;
+}
+
+#formCards{
+    max-width: 1100px;
+}
