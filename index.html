@@ -17,12 +17,12 @@
     <script src="./script/main.js"></script>
     <body>
         <header id="header">
-            <img alt="logo" src="./img/logoDark.png" id="logo">
+            <p onclick="location.href='./Baptiste_COLLESSON_CV.pdf'" download="Baptiste_COLLESSON_CV"><i class="fa-solid fa-download"></i> CV</p>
             <div>
-                <p onclick="location.href='#formationContain'"><i class="fa-solid fa-book-open"></i>Formations</p>
-                <p onclick="location.href='#expContains'"><i class="fa-solid fa-user-plus"></i>Experiences</p>
-                <p onclick="location.href='#ptp'"><i class="fa-solid fa-file"></i>Projets</p>
-                <p onclick="location.href='#contactContain'"><i class="fa-solid fa-envelope"></i>Contact</p>
+                <p onclick="scrollID('formationContain')"><i class="fa-solid fa-book-open"></i>Formations</p>
+                <p onclick="scrollID('expContains')"><i class="fa-solid fa-user-plus"></i>Experiences</p>
+                <p onclick="scrollID('ptp')"><i class="fa-solid fa-gear"></i>Projets</p>
+                <p onclick="scrollID('contactContain')"><i class="fa-solid fa-envelope"></i>Contact</p>
             </div>
         </header>
         <main>
@@ -52,6 +52,10 @@
                         <p>Au cours de mon cursus au BUT Informatique, j'ai pu valider ma première
                             année. J'ai donc décidé de me diriger vers le parcours "Réalisation
                             d'applications".
+                        </p>
+                        <p>Le BUT Informatique me permet d'acquérir des compétences en programmation, web, ... 
+                            De plus la formation donne une vue globale du monde professionnel, 
+                            grâce à des formations en gestion de projet, gestion d'entreprise, comptabilité, économie et droit.
                         </p>
                     </div>
                     <div class="card">
@@ -93,7 +97,7 @@
             </div>
             <div id="projets">
                 <div class="projet">
-                    <img src="./img/logoDark.png" alt="">
+                    <img src="./img/p1.png" alt="">
                     <div>
                         <div class="pTitle"><p>Logiciel pour CV</p></div>
                         <div class="pDesc">
@@ -104,21 +108,21 @@
                             <p>Lorem ipsum dolor sit amet</p>
                         </div>
                         <div class="pComp">
-                            <p>GIT</p>
-                            <p>GIT</p>
-                            <p>GIT</p>
-                            <p>GIT</p>
+                            <p>Java</p>
+                            <p>JavaFX</p>
+                            <p>Interface utilisateur</p>
+                            <p>Gestion des fichiers</p>
                         </div>
                     </div>
                 </div>
                 <div class="projet">
                     <div>
-                        <div class="pTitle"><p>Logiciel pour CV</p></div>
+                        <div class="pTitle"><p>Développement d'un jeu</p></div>
                         <div class="pComp">
-                            <p>GIT</p>
-                            <p>GIT</p>
-                            <p>GIT</p>
-                            <p>GIT</p>
+                            <p>Java</p>
+                            <p>Agile</p>
+                            <p>Réseau</p>
+                            <p>Travail en équipe</p>
                         </div>
                         <div class="pDesc">
                             <p>Lorem ipsum dolor sit amet</p>
@@ -133,7 +137,7 @@
                 <div class="projet">
                     <img src="./img/logoDark.png" alt="">
                     <div>
-                        <div class="pTitle"><p>Logiciel pour CV</p></div>
+                        <div class="pTitle"><p>Site web sur l'Eco-mobilité</p></div>
                         <div class="pDesc">
                             <p>Lorem ipsum dolor sit amet</p>
                             <p>Lorem ipsum dolor sit amet</p>
@@ -142,10 +146,11 @@
                             <p>Lorem ipsum dolor sit amet</p>
                         </div>
                         <div class="pComp">
-                            <p>GIT</p>
-                            <p>GIT</p>
-                            <p>GIT</p>
-                            <p>GIT</p>
+                            <p>HTML / CSS</p>
+                            <p>Javascript</p>
+                            <p>Interface utilisateur</p>
+                            <p>Management</p>
+                            <p>Gestion</p>
                         </div>
                     </div>
                 </div>
@@ -167,7 +172,7 @@
                     <div class="reseaux">
                         <a href="tel:+33625320216"><i class="fa-solid fa-square-phone"></i></a>
                         <a href="mailto:baptiste.collesson.etu@univ-lille.fr"><i class="fa-solid fa-envelope"></i></a>
-                        <a href=""><i class="fa-solid fa-house"></i></a>
+                        <a onclick="copyAdress()" ><i class="fa-solid fa-house"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
@@ -180,12 +185,12 @@
             </div>
             <div>
                 <p>Télecharger le CV</p>
-                <button>CV</button>
+                <button onclick="location.href='./Baptiste_COLLESSON_CV.pdf'">CV</button>
             </div>
             <div>
                 <a href=""><i class="fa-solid fa-square-phone"></i></a>
                 <a href=""><i class="fa-solid fa-envelope"></i></a>
-                <a href=""><i class="fa-solid fa-house"></i></a>
+                <a onclick="copyAdress()"><i class="fa-solid fa-house"></i></a>
                 <a href=""><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </footer>
