@@ -1,12 +1,13 @@
 #present{
-    padding-top: 90px;
+    padding-top: 120px;
     width: 100%;
-    max-width: 920px;
-    padding-left: calc(50% - 410px);
-    padding-right: calc(50% - 410px);
+    max-width: 1080px;
+    padding-left: calc(50% - 610px);
+    padding-right: calc(50% - 210px);
     background-color: #eee;
     height: 700px;
     display: flex;
+    justify-content: space-around;
 }
 
 .photo{
@@ -26,14 +27,37 @@
     margin-top: 8%;
 }
 
+.right{
+    width: 20ch;
+}
+
 .typing-demo {
     color: #111;
-    width: 18ch;
+    width: 19ch;
     height: 60px;
-    animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+    animation: typing 2s steps(19), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
     font-size: 45px;
-  }
+}
+
+
+
+#present div p{
+    backdrop-filter: blur(5px);
+    width: 40ch;
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.38);
+    border: solid 1px #00b7ff;
+    padding: 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.first{
+    margin-left: 7ch;
+}

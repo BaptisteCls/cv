@@ -12,13 +12,19 @@
         <link rel="stylesheet" href="./css/experiences.css">
         <link rel="stylesheet" href="./css/formations.css">
         <link rel="stylesheet" href="./css/contact.css">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+        <title>Baptiste Collesson</title>
     </head>
     <script src="https://kit.fontawesome.com/c2507bb805.js" crossorigin="anonymous"></script>
-    <script src="./script/main.js"></script>
+    <script src="./script/main.js" defer></script>
     <body>
         <header id="header">
             <p onclick="location.href='./Baptiste_COLLESSON_CV.pdf'" download="Baptiste_COLLESSON_CV"><i class="fa-solid fa-download"></i> CV</p>
             <div>
+                <p onclick="scrollID('present')"><i class="fa-solid fa-person"></i>Présentation</p>
                 <p onclick="scrollID('formationContain')"><i class="fa-solid fa-book-open"></i>Formations</p>
                 <p onclick="scrollID('expContains')"><i class="fa-solid fa-user-plus"></i>Experiences</p>
                 <p onclick="scrollID('ptp')"><i class="fa-solid fa-gear"></i>Projets</p>
@@ -28,10 +34,22 @@
         <main>
             <div id="present">
                 <div class="photo"><img src="./img/photo.png" alt=""></div>
-                <div class="typing-demo">
-                    Baptiste Collesson.
+                <div class="right">
+                    <div class="typing-demo">
+                        Baptiste Collesson
+                    </div>
+                    <p class="first">
+                        Bonjour, j'ai 19 ans, je suis étudiant en Informatique <br>
+                        Actuellement en recherche de stage dans le développement
+                    </p>
+                    <p class="second">
+                        MES QUALITES <br> <br><br>
+                        <i class="fa-solid fa-circle-chevron-right"></i> Curieux <br><br>
+                        <i class="fa-solid fa-circle-chevron-right"></i> Autonome <br><br>
+                        <i class="fa-solid fa-circle-chevron-right"></i> Esprit d’équipe <br><br>
+                        <i class="fa-solid fa-circle-chevron-right"></i> Savoir prendre des décisions <br><br>
+                    </p>
                 </div>
-                
             </div>
             <div id="formationContain">
                 <div class="animated">
@@ -45,6 +63,7 @@
                         <p>Baccalauréat décroché avec mention, avec pour domaines de spécialisation
                             NSI et Mathématiques, en raccord avec ma poursuite d'études                            
                         </p>
+                        <p>Cette formation a été un pilier essentiel dans le développement de mes compétences en maîtrise des fondements de l'informatique et algorithmiques</p>
                     </div>
                     <div class="card">
                         <p class="title">BUT Informatique</p>
@@ -61,6 +80,8 @@
                     <div class="card">
                         <p class="title">Diplôme du BAFA</p>
                         <p class="place"></p>
+                        <p>J'ai complété avec succès la formation du Brevet d'Aptitude aux Fonctions d'Animateur (BAFA), démontrant mon engagement envers le développement personnel et les compétences interpersonnelles. Cette expérience a renforcé ma capacité à travailler en équipe, à gérer des groupes diversifiés et à planifier des activités éducatives.</p>
+                        <p>J'ai pu réalisé mon BAFA avec une spécialisation en activités manuelles suite à 2 stages d'un mois dans la petite enfance.</p>
                     </div>
                 </div>
             </div>
@@ -76,7 +97,7 @@
                             <p><i class="fa-regular fa-calendar"></i> En aout 2022 et en juillet 2023</p>
                             <p><i class="fa-solid fa-location-dot"></i> Ville de lomme, Ecole Petit Quinquin</p>
                             <p>Aide et accompagnement autour de la petite enfance durant deux étés,<br>
-                                participation à la mise en œuvre du projet pédagogique au sein d'une équipe
+                                participation à la mise en œuvre d'un projet pédagogique au sein d'une équipe.
                             </p>
                         </div>
                     </div>
@@ -101,11 +122,8 @@
                     <div>
                         <div class="pTitle"><p>Logiciel pour CV</p></div>
                         <div class="pDesc">
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <p>Projet réalisé en autonomie</p>
+                            <p>Logiciel que j'ai développé pour simplifier la conception de CV. Avec une interface conviviale, il permet de créer des CV percutants en quelques clics. L'outil offre plusieurs modèles  et facilite l'exportation du CV en formats variés. Il allie simplicité et sophistication pour aider chacun à se démarquer dans le monde professionnel</p>
                         </div>
                         <div class="pComp">
                             <p>Java</p>
@@ -125,25 +143,20 @@
                             <p>Travail en équipe</p>
                         </div>
                         <div class="pDesc">
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <p>Dans le cadre d'une équipe de cinq collaborateurs, j'ai contribué au développement d'un jeu d'échecs en ligne de commandes, mettant en pratique les principes Agiles. </p>
+                            <p>Notre jeu propose une interface minimaliste, incluant des fonctionnalités multijoueurs en temps réel.</p>
+                            <p>Le but de ce projet étais d'explorer le cadre de travail Agile</p>
                         </div>
                     </div>
-                    <img src="./img/logoDark.png" alt="">
+                    <img src="./img/p2.png" alt="">
                 </div>
                 <div class="projet">
-                    <img src="./img/logoDark.png" alt="">
+                    <img src="./img/p3.png" alt="">
                     <div>
                         <div class="pTitle"><p>Site web sur l'Eco-mobilité</p></div>
                         <div class="pDesc">
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet</p>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <p>Dans le cadre d'un projet collaboratif, j'ai participé à la création du site web "Ubi SoftMobilities", dédié au covoiturage, et à l'écopartage. En utilisant HTML, CSS et JavaScript, j'ai développé une plateforme interactive en respectant des valeurs.</p>
+                            <p>Le projet est lié à des compétences de Management et de Gestion par rapport à l'analyse du marché</p>
                         </div>
                         <div class="pComp">
                             <p>HTML / CSS</p>
